@@ -1,5 +1,9 @@
 <html>
+<head>
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+</head>
 <body>
+
 <form action="/logout" method="post">
     <button type="submit">Logout</button>
 </form>
@@ -23,10 +27,12 @@
     <input type="number" placeholder="Release Year" name="gameYear"/>
     <button type="submit">Submit</button>
 </form>
+
 <ol>
     {{#games}}
     <li>{{name}} - {{genre}} - {{platform}} - {{releaseYear}}</li>
     {{/games}}
 </ol>
+
 </body>
 </html>
