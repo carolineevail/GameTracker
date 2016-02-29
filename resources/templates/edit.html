@@ -1,0 +1,32 @@
+<html>
+<body>
+
+<form action="/perform-update" method="post">
+    <input type="hidden" name="id" value="{{id}}">
+    <br/>
+    name:<input type="text" name="gameName"/>
+    <br/>
+    genre:<select name="gameGenre">
+    <option selected disabled>Genre</option>
+    <option value="adventure">Adventure</option>
+    <option value="rpg">RPG</option>
+    <option value="strategy">Strategy</option>
+    <option value="shooter">Shooter</option>
+</select>
+    <br/>
+    platform:<select name="gamePlatform">
+    <option selected disabled>Platform</option>
+    <option value="pc">PC</option>
+    <option value="ps4">PS4</option>
+    <option value="xbone">XBox One</option>
+    <option value="wiiu">Wii U</option>
+</select>
+    <br/>
+    year:<input type="text" name="gameYear"/>
+    <br/>
+
+    <input type="submit" value="Submit changes">
+</form>
+
+</body>
+</html>
